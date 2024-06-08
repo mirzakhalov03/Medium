@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jomolhari", sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 300px;
+    margin-bottom: 50px;
+}

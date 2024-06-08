@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dashboard.min.css">
+</head>
+<body>
+   <div class="container">
+    <div class="dash">
+        <div class="dash__account">
+            <div class="dash__hug">
+                <h2>Dashboard</h2>
+                <div class="user-acc">
+                    <img src="../img/user.png" alt="">
+                    <p>Author</p>
+                </div>
+
+                <a href="../index.html" class="Home-page">Home page</a>
+            </div>
+            <a href="../pages/login.html">Sign Out?</a>
+        </div>
+        <div class="dash__board">
+            <h2>Create New Post</h2>
+            <br>
+            <hr>
+            <br>
+            <div class="post">
+                <form id="post-form">
+                    <label for="title">Post Title</label>
+                    <br>
+                    <input type="text" id="title" required >
+                    <br>
+                    <br>
+                    <label for="image">Image URL</label>
+                    <br>
+                    <input type="url" id="image" required>
+                    <br>
+                    <br>
+                    <label for="">Post Description</label>
+                    <br>
+                    <textarea id="description" cols="30" rows="10" required></textarea>
+                    <br>
+                    <br>
+                    <button class="post-btn" type="submit">Create Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   </div>
+   <script src="../js/dashboard.js"></script>
+</body>
+</html>
