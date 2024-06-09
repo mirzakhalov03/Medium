@@ -18,15 +18,15 @@ const createPost = (e) => {
             'Authorization': `Bearer ${localStorage.getItem('token')}`,
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({title, image, description})
+        body: JSON.stringify({ title, image, description })
     }).then(response => response.json())
-    .then(data => {
-        console.log(data);
-        if (data.status === 'success') {
-            alert("Post created successfully");
-            location.reload();
-        }
-    })
+        .then(data => {
+            console.log(data);
+            if (data.status === 'success') {
+                alert("Post created successfully");
+                location.reload();
+            }
+        })
 }
 
 

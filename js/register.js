@@ -1,8 +1,8 @@
 const $form = document.querySelector('#form');
 
-function User (firstName, lastName, email, password) {
+function User(firstName, lastName, email, password) {
     this.name = firstName;
-    this.lastName = lastName; 
+    this.lastName = lastName;
     this.email = email;
     this.password = password;
 }
@@ -23,17 +23,16 @@ const registerUser = (e) => {
         },
         body: JSON.stringify(newUser)
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        if (data.status === 'success') {
-            alert("User created successfully");
-            location.replace("http://127.0.0.1:5500/pages/login.html");
-        } else {
-            alert(data.message);
-        }
-        // location.replace("http://127.0.0.1:5500/pages/login.html");
-    })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            if (data.status === 'success') {
+                alert("User created successfully");
+                location.replace("http://127.0.0.1:5500/pages/login.html");
+            } else {
+                alert(data.message);
+            }
+        })
 
 
 }

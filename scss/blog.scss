@@ -1,46 +1,48 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Jomolhari", sans-serif;
 }
 
-body{
+body {
     background-color: rgb(0, 0, 0);
     min-height: 100vh;
 }
 
-.container{
+.container {
     max-width: 1440px;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
-    
+
 }
 
-.nav{
+.nav {
     max-width: 100%;
     width: 100%;
 
 
-    &__hug{
+    &__hug {
         max-width: 100%;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 30px 0 ;
+        padding: 30px 0;
     }
-    &__logo{
+
+    &__logo {
         display: flex;
         align-items: center;
     }
 
-    &__btns{
+    &__btns {
         display: flex;
         gap: 30px;
         align-items: center;
-        a{
+
+        a {
             background-color: transparent;
             color: white;
             font-family: sans-serif;
@@ -52,48 +54,50 @@ body{
     }
 }
 
-.wrapper{
+.wrapper {
     max-width: 100%;
     width: 100%;
     color: white;
 
-    .blog__wrapper{
+    .blog__wrapper {
         max-width: 100%;
         width: 100%;
         min-height: 800px;
     }
 
-    .blog__top{
+    .blog__top {
         max-width: 100%;
         width: 100%;
         padding: 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        h1{
+
+        h1 {
             font-size: 38px;
         }
-        p{
+
+        p {
             font-size: 20px;
         }
     }
 
-    .blog__img{
+    .blog__img {
         max-width: 100%;
         width: 100%;
         height: 400px;
 
-        img{
+        img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
 
-    .blog__text{
+    .blog__text {
         padding: 50px;
 
-        p{
+        p {
             font-size: 20px;
         }
     }

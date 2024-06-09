@@ -23,7 +23,7 @@ const renderData = (post) => {
         </div>
     </div>
     `
-    
+
 }
 
 const loadData = () => {
@@ -32,7 +32,7 @@ const loadData = () => {
         .then(data => {
             let post = data.data
             renderData(post)
-        }) 
+        })
 }
 
 loadData()

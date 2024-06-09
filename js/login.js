@@ -17,18 +17,18 @@ const loginUser = (e) => {
             password
         })
     })
-    .then(response => response.json())
-    .then(data => {
-        localStorage.setItem("token", data.data.token)
-        console.log(data.data.token);
-        if (data.status === 'success') {
-            alert("User logged in successfully");
-            location.replace("http://127.0.0.1:5500/pages/dashboard.html");
-        } else {
-            alert(data.message);
-        }
-    })
-    
+        .then(response => response.json())
+        .then(data => {
+            localStorage.setItem("token", data.data.token)
+            console.log(data.data.token);
+            if (data.status === 'success') {
+                alert("User logged in successfully");
+                location.replace("http://127.0.0.1:5500/pages/dashboard.html");
+            } else {
+                alert(data.message);
+            }
+        })
+
 }
 
 $form.addEventListener('submit', loginUser);

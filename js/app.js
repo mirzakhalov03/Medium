@@ -1,7 +1,7 @@
 const $post = document.querySelector(".post");
 const navBtns = document.querySelector(".nav__btns");
 
-if(localStorage.getItem('token')) {
+if (localStorage.getItem('token')) {
     navBtns.innerHTML = `
     <a href="../pages/dashboard.html" class="auth">Dashboard</a>
     <a href="../pages/logout.html" class="auth">Logout</a>
